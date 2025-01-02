@@ -3,7 +3,8 @@ function App(){
   return (
     <div>
        <div>Hello</div>
-       <Video></Video>
+       <Video title="React JS tutorial"></Video>
+       <Video title="Node JS tutorial"></Video>
     </div>
   )
 }
