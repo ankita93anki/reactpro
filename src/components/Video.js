@@ -1,20 +1,28 @@
 import "./Video.css";
-function Video(props) {
-  let topic = "React JS Component";
-  //  let className = "React-JS-Component";
-  let bg = "dark";
+function Video({ title, bgColor, channel, views, time}) {
+  // let topic = "React JS Component";
+  // let className = "React-JS-Component";
+  // let bg = "dark";
   return (
     <>
-      Hello
-      <img
-        src="https://via.assets.so/game.jpg?w=200&h=120"
-        alt="React JS Tutorial - Components
-        "
-      />
-      {/* <div className={className}  style = {{backgroundColor:'red'}} 
-      onClick="">{topic}</div> */}
-      <div className={bg} onClick="">
-        {topic}
+      <div>
+        <div className = "pic">
+          <img
+            src="https://via.assets.so/game.jpg?w=200&h=120"
+            alt="React JS Tutorial - Components
+          "
+          />
+       </div>
+        {/* <div style={{ backgroundColor: bgColor }}>
+          {title} Tutorial
+        </div> */}
+        <div className="title">{title}</div>
+        <div className="channel"> {channel}</div>
+        <div className="views">
+          {" "}
+          {views} views <span>.</span>
+          {time}
+        </div>
       </div>
     </>
   );
